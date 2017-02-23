@@ -1,6 +1,19 @@
+//$(document).ready(init);
+
+
 function init(){
     createList();
-    var listaPaises = document.getElementsByTagName("li");
+    //var listaPaises = document.getElementsByTagName("li");
+    var listaPaises = $('li');
+    
+    listaPaises.each(function(){
+        var src =$(this).find('img').attr('src');
+        console.log(sa<s);
+    })
+    
+    
+    
+    
     for(var i=0; i<listaPaises.length; i++){
         listaPaises[i].addEventListener("click",onCountryClick);
     }
